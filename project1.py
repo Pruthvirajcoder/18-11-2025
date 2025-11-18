@@ -4,7 +4,9 @@ import random
 target = random.randint(1,100)
 
 while True:
-    usernumber = int(input("guess the target :" ))
+    usernumber = input("guess the target or Quet(Q) :" )
+    if(usernumber== "Q"):
+        break
     if(usernumber == target):
         print("correct guess")
         break
